@@ -1,4 +1,4 @@
-classdef  car
+classdef  car < account
     %UNTITLED6 Summary of this class goes here
     %   Detailed explanation goes here
     
@@ -10,11 +10,13 @@ classdef  car
     end
     
     methods
-        function obj = car(license,driver)
+        function obj = car(name,lastName,license)
             %UNTITLED6 Construct an instance of this class
             %   Detailed explanation goes here
-            obj.driver = driver;
+            obj = obj@account(name,lastName);
             obj.license = license;
+            obj.driver = obj.name;
+            
         end
         
         function displayDriver(obj)
