@@ -5,10 +5,7 @@ clc
 
 
 
-uberX = car('IVAN', 'Aguas','1723295414')
-% uberX.displayDriver;
+uberX = car('IVAN', 'Aguas','1723295414');
 
-% 
-% 
-% uberBlack =  car('7886887323','Gaby');
-% uberBlack.displayDriver;
+
+uberX.displayDriver
